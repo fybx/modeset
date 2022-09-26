@@ -8,10 +8,18 @@
 #include <stdio.h>
 #include "utility.h"
 
-int main() {
-    int p = 0;
-    int r = testFunction(5, &p);
-    printf("testFunction(5, &p);\nReturns: %d\np: %d", r, p);
+int main(int argc, char* argv[]) {
+    /* Completely ignore flags, for a while */
+    argc = 0;
+     
+    if (!argc) {
+        printf("modeset by fyb\n");
+        printf("local machine time:  16.19\n");
+        printf("current mode:        dark (f)\n");
+        printf("current sink volume: 100\n");
+    } else {
+        
+    }
     return(0);
 }
 
