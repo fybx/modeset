@@ -6,7 +6,11 @@
  */
 #include "utility.h"
 
-int testFunction(int proto, int* proto2) {
-    *proto2 = proto;
-    return ++proto;
+unsigned long djb2(char *str) {
+    unsigned long hash = 5381;  
+    int c;
+
+    while ((c = *str++))
+        hash = ((hash << 5) + hash) + c;
+    return hash;
 }

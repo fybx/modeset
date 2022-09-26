@@ -7,6 +7,9 @@
 #ifndef UTILITY_H_INCLUDED
 #define UTILITY_H_INCLUDED
 
-int testFunction(int proto, int* proto2);
+/*
+ * This function is borrowed from: http://www.cse.yorku.ca/~oz/hash.html
+ */
+unsigned long djb2(char *str);
 
 #endif
