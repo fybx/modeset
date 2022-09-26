@@ -10,6 +10,9 @@
 
 int main(int argc, char* argv[]) {
     /* Completely ignore flags, for a while */
+    int fQuiet = 0; /* No output to stdout when set */
+    int fDark = 0; /* Force set color scheme mode to dark */
+    int fLight = 0; /* Force set color scheme mode to light */
     argc = 0;
      
     if (!argc) {
