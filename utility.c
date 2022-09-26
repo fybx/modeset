@@ -8,5 +8,5 @@
 
 int testFunction(int proto, int* proto2) {
     *proto2 = proto;
-    return proto++;
+    return ++proto;
 }
