@@ -22,13 +22,29 @@ int main(int argc, char* argv[]) {
     int fLight = 0; /* Force set color scheme mode to light */
     argc = 0;
      
+    char* command = "none"; /* Command that is extracted from argv list */ 
     if (!argc) {
         printf("modeset by fyb\n");
         printf("local machine time:  16.19\n");
         printf("current mode:        dark (f)\n");
         printf("current sink volume: 100\n");
-    } else {
-        
+    } else { /* Argument count > 0, so a command is present */
+        switch(djb2(command)) {
+            case CWALLP:
+                break;
+            case CWALLC:
+                break;
+             case CSHUTDOWN:
+                break;       
+             case CLOCK:
+                break;       
+             case CSETL:
+                break;       
+             case CLOGIN:
+                break;
+            case CUNLOCK:
+                break;
+        }
     }
     return(0);
 }
