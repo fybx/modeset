@@ -4,4 +4,4 @@
 #
 echo "Hello, $( whoami )"
 echo "Building: modeset"
-gcc main.c -o modeset -std=c89 -O3 -pipe -Wall -Werror=format-security
+gcc main.c utility.c -o modeset -std=c89 -O3 -pipe -Wall -Werror=format-security
