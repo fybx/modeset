@@ -12,4 +12,6 @@
  */
 unsigned long djb2(char *str);
 
+unsigned long* getHashes(int, char**);
+
 #endif
