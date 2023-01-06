@@ -14,3 +14,13 @@ modeset expects a command and a set of arguments for it. The list of available c
 - `state`: Changes state and fulfils the tasks according to specified state
 - `mode`: Changes mode (light or dark) only. This may change wallpapers or themes.
 
+Arguments alter the behaviours of commands.
+- `theme`: `theme_file_path` `mode (optional)`
+- `state`: `state_string`
+- `mode`: `mode_string`
+
+| field        | values                                |
+|:------------ |:------------------------------------- |
+| state_string | { -login, -lock, -shutdown, -unlock } |
+| mode_string  | { -dark, -light }                     |
+
